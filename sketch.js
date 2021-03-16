@@ -38,12 +38,12 @@ function gotStream(stream, id) {
 
 function draw() {
     if (startVideo && myVideo != null) {
-        image(myVideo, 10, 10,width/2,height);
+        image(myVideo, 10, 10,width - 20,height);
         text("My Video", 10, 10);
     }
 
     if (watchVideo && otherVideo != null) {
-        image(otherVideo,10, 10,width/2,height);
+        image(otherVideo,10, 10,width - 20,height);
         text("Their Video", width/2+10, 10);
     }
 }
