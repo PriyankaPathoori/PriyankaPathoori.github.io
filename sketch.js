@@ -11,7 +11,7 @@ function setup() {
     button1.position(89, 19);
     button1.mousePressed(changeBG1);
 
-    let constraints = {audio: true, video: {facingMode: 'environment'}};
+    let constraints = {audio: false, video: {facingMode: 'environment'}};
     myVideo = createCapture(constraints,
         function(stream) {
             let p5lm = new p5LiveMedia(this, "CAPTURE", stream, "jZQ64AMJc")
